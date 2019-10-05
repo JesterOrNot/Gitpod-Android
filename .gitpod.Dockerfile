@@ -2,4 +2,4 @@ FROM gitpod/workspace-full
 
 USER root
 RUN apt-get update && sudo apt-get install android-sdk snapd --yes
-RUN snap update && snap install android-studio --classic
+RUN snap install android-studio
