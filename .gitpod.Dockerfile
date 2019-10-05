@@ -1,6 +1,7 @@
 FROM gitpod/workspace-full
 
 USER root
+RUN apt-get update && sudo apt-get install android-sdk
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
