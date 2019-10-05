@@ -9,3 +9,6 @@ ports:
 tasks:
 - init: echo 'init script' # runs during prebuild
   command: echo 'start script'
+vscode:
+  extensions:
+    - adelphes.android-dev-ext@0.8.0:z3IVaDRzKS8IeFWrhyaPAA==
