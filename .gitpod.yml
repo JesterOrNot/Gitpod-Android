@@ -15,9 +15,9 @@ github:
     # add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
     addComment: true
     # add a "Review in Gitpod" button to the pull request's description (defaults to false)
-    addBadge: false
+    addBadge: true
     # add a label once the prebuild is ready to pull requests (defaults to false)
-    addLabel: false
+    addLabel: true
 vscode:
   extensions:
     - adelphes.android-dev-ext@0.8.0:z3IVaDRzKS8IeFWrhyaPAA==
