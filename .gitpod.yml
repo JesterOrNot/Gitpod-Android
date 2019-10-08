@@ -18,6 +18,10 @@ github:
     addBadge: true
     # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: true
+ports:
+  - port: 5900
+  - port: 6080
+  - port: 35900
 vscode:
   extensions:
     - adelphes.android-dev-ext@0.8.0:z3IVaDRzKS8IeFWrhyaPAA==
