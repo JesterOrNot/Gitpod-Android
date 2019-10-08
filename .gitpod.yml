@@ -25,6 +25,8 @@ ports:
     onOpen: ignore
   - port: 35900
     onOpen: ignore
+  - port: 6942
+    onOpen: ignore
 vscode:
   extensions:
     - adelphes.android-dev-ext@0.8.0:z3IVaDRzKS8IeFWrhyaPAA==
