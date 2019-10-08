@@ -4,19 +4,19 @@ github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
     master: true
-    # enable for all branches in this repo (defaults to false)
+# enable for all branches in this repo (defaults to false)
     branches: true
-    # enable for pull requests coming from this repo (defaults to true)
+# enable for pull requests coming from this repo (defaults to true)
     pullRequests: true
-    # enable for pull requests coming from forks (defaults to false)
+# enable for pull requests coming from forks (defaults to false)
     pullRequestsFromForks: true
-    # add a check to pull requests (defaults to true)
+# add a check to pull requests (defaults to true)
     addCheck: true
-    # add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
+# add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
     addComment: true
-    # add a "Review in Gitpod" button to the pull request's description (defaults to false)
+# add a "Review in Gitpod" button to the pull request's description (defaults to false)
     addBadge: true
-    # add a label once the prebuild is ready to pull requests (defaults to false)
+# add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: true
 ports:
   - port: 5900
@@ -27,3 +27,4 @@ vscode:
     - adelphes.android-dev-ext@0.8.0:z3IVaDRzKS8IeFWrhyaPAA==
     - mpotthoff.vscode-android-webview-debug@1.1.1:TY2OLKxxIJSs2lt3TgOpjw==
     - DiemasMichiels.emulate@1.3.0:sXCoQONS3kXpSTBuMnxkyQ==
+    - fwcd.kotlin@0.2.10:kX3nrW3fv/LjU/QSQ41zYA==
