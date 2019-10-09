@@ -20,7 +20,7 @@ github:
     addLabel: true
 tasks:
   - command: /opt/android-studio/bin/studio.sh
-  - command: "echo 'Hello world'"
+  - command: echo "Hello"
 ports:
   - port: 5900
     onOpen: ignore
