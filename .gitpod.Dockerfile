@@ -33,7 +33,7 @@ RUN sudo dpkg --add-architecture i386 && sudo apt-get update -yqq && sudo apt-ge
   vim \
   && sudo apt-get clean
 
-RUN groupadd android && useradd -d /opt/android-sdk-linux -g android android
+RUN sudo groupadd android && sudo useradd -d /opt/android-sdk-linux -g android android
 
 COPY tools /opt/tools
 
