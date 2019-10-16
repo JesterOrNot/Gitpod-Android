@@ -18,7 +18,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install required tools
 # Dependencies to execute Android builds
 
-RUN dpkg --add-architecture i386 && apt-get update -yqq && apt-get install -y \
+RUN sudo dpkg --add-architecture i386 && apt-get update -yqq && sudo apt-get install -y \
   curl \
   expect \
   git \
@@ -31,7 +31,7 @@ RUN dpkg --add-architecture i386 && apt-get update -yqq && apt-get install -y \
   wget \
   unzip \
   vim \
-  && apt-get clean
+  && sudo apt-get clean
 
 RUN groupadd android && useradd -d /opt/android-sdk-linux -g android android
 
