@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc
+FROM gitpod/workspace-full-vnc:latest
 USER gitpod
 RUN sudo add-apt-repository ppa:maarten-fonville/android-studio && \
     sudo apt-get update && \
