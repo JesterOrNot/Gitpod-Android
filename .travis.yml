@@ -1,0 +1,6 @@
+language: ruby
+
+services:
+  - docker
+script:
+  - docker build -f .gitpod.Dockerfile .
