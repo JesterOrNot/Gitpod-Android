@@ -13,7 +13,14 @@ RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - &
     apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/*;
-
+RUN add-apt-repository ppa:maarten-fonville/android-studio && \
+    apt-get update && \
+    apt-get install android-sdk \
+        lib32stdc++6 \
+        android-studio \
+        android-sdk-platform-23 --no-install-recommends --yes \
+        && apt-get clean \
+        && rm -rf /var/lib/apt/lists/*
 USER gitpod
 
 # Install Flutter sdk
