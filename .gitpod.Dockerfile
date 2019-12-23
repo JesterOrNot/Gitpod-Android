@@ -36,5 +36,3 @@ ENV PUB_CACHE=/workspace/.pub_cache
 
 # add executables to PATH
 RUN echo 'export PATH=${FLUTTER_HOME}/bin:${FLUTTER_HOME}/bin/cache/dart-sdk/bin:${PUB_CACHE}/bin:${FLUTTER_HOME}/.pub-cache/bin:$PATH' >>~/.bashrc
-RUN wget -O - http://dl.google.com/android/android-sdk_r26.1.1-linux.tgz | tar -xvz && \
-    avdmanager create avd -n gitpod -k "system-images;android-28;google_apis;x86" 
