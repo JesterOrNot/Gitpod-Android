@@ -1,9 +1,16 @@
 FROM gitpod/workspace-full-vnc:branch-jx-python-tk
-RUN add-apt-repository ppa:maarten-fonville/android-studio && \
-    apt-get update && \
-    apt-get install android-sdk \
+
+RUN add-apt-repository ppa:maarten-fonville/android-studio \
+    && apt-get update \
+    && apt-get install -yq \
+        android-sdk \
         lib32stdc++6 \
         android-studio \
-        android-sdk-platform-23 --no-install-recommends --yes \
-        && apt-get clean \
-        && rm -rf /var/lib/apt/lists/*
+        android-sdk-platform-23 \
+        qemu-kvm \
+        libvirt-bin \
+        virtinst \
+        bridge-utils \
+        cpu-checker --no-install-recommends \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
