@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc:branch-jx-python-tk
+FROM gitpod/workspace-full-vnc
 
 RUN add-apt-repository ppa:maarten-fonville/android-studio \
     && apt-get update \
