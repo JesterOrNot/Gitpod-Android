@@ -10,6 +10,8 @@ RUN add-apt-repository ppa:maarten-fonville/android-studio \
         qemu-kvm \
         virtinst \
         bridge-utils \
-        cpu-checker --no-install-recommends \
+        cpu-checker \
+        genisoimage \
+        libosinfo-1.0-0 --no-install-recommends \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
