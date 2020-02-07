@@ -10,4 +10,4 @@ RUN sudo add-apt-repository ppa:maarten-fonville/android-studio \
            android-studio \
            android-sdk-platform-23 --no-install-recommends \
     && sudo apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && sudo rm -rf /var/lib/apt/lists/*
