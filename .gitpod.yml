@@ -1,5 +1,6 @@
 image:
   file: .gitpod.Dockerfile
+priviliged: true
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
